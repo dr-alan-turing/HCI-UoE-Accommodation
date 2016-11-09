@@ -7,16 +7,16 @@
 * {
     margin: 0;
     padding: 0;
+    /*temp?:*/ font-family: 'Raleway', 'Helvetica', sans-serif;
 }
 
-html, body, .main-wrapper {
+html, body {
     width: 100%;
     height: 100%;
 }
 
 body {
     background: #F0F0F0;
-    color: white;
 }
 
 .wrapper {
@@ -25,61 +25,76 @@ body {
     margin: 0 auto;
 }
 
-.sticky-nav,
-.main {
-  position: fixed;
+/*
+Nav
+*/
+
+#nav-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-.sticky-nav {
-  background: #707070;
-  color: #FFFFFF!important;
-  height: 50px;
-  width: 100%;
-  display: inline-block;
-  z-index: 2;
+.nav-container {
+    background-color: #585858;
 }
 
-.nav>li {
-  float:left;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
 
-.navbar-nav {
-  width:100%;
+.nav li {
+    width: 100%;
+    height: 100%;
 }
 
-section.module.parallax {
-  min-height: 900px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', 'Helvetica', sans-serif;
 }
 
-section.module.parallax h1 {
-  color: #202020;
-  font-size: 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  line-height: 70px;
-  text-align: left;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.nav li a:hover /*TO-DO:, .nav li a:focus*/ {
+    background-color: #363636;
 }
 
-section.module.parallax-1 {
-  background: #F0F0F0;
+/*
+Sections
+*/
+
+.section {
+    padding-top: 40px;
+    /*temp:*/ min-height: 900px;
 }
-section.module.parallax-2 {
-  background: #F0F0F0;
+
+.section h2 {
+    font-size: 30px;
+    line-height: 70px;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
 }
-section.module.parallax-3 {
-  background: #F0F0F0;
+
+#section2, #section4 {
+    background-color: #fdfdfd;
 }
-section.module.parallax-4 {
-  background: #F0F0F0;
+
+#footer {
+    padding: 10px;
+    /*temp:*/ min-height: 50px;
+    background-color: #585858;
+    color: white;
+    text-align: center;
 }
 
 /*
 *
-* First section
+* Section 1 (home)
 *
 */
 
@@ -87,13 +102,13 @@ section.module.parallax-4 {
  General
 */
 
-.first_section {
+#home {
     padding-top: 1px;
     padding-bottom: 300px;
     position: relative;
 }
 
-.first_section:after {
+#home:after {
     background-size: cover;
     content : "";
     display: block;
@@ -115,18 +130,19 @@ section.module.parallax-4 {
     */
 }
 
-.first_section h2 {
-    margin-top: 70px;
-    font-size: 50px;
-    font-weight: 500;
+
+#home h1 {
+    margin-bottom: 70px;
+    font-size: 80px;
+    font-weight: 600;
     font-family: 'Josefin Sans', sans-serif;
     color: #202020;
 }
 
-.first_section h1 {
-    margin-bottom: 70px;
-    font-size: 80px;
-    font-weight: 600;
+#home h2 {
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: 500;
     font-family: 'Josefin Sans', sans-serif;
     color: #202020;
 }
@@ -179,7 +195,7 @@ section.module.parallax-4 {
 }
 
 /*
-Long tile
+Secondary tiles
 */
 
 .secondary_tiles {
@@ -208,4 +224,14 @@ Long tile
 
 .short_tile .tile_image {
     object-position: center;
+}
+
+/*
+*
+* Section 2 (university halls)
+*
+*/
+
+#university_halls {
+    
 }

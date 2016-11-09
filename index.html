@@ -5,55 +5,50 @@
     <title>UoE Accommodation</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>		
+    <!-- jQuery easing -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 </head>
 <body>
-  <div id="navigation" class="sticky-nav">
-
-    <ul class="nav navbar-nav">
-      <li><a href="#1">Home</a></li>
-      <li><a href="#2">University Halls</a></li>
-      <li><a href="#3">Private Halls</a></li>
-      <li><a href="#4">Private Housing</a></li>
-      <li><a href="#5">FAQ Guide</a></li>
-    </ul>
-  </div>
-  <div>
-  <section class="module parallax parallax-1" id="1">
-    <div class="main-wrapper">
-        <div class="container">
-        <div class="first_section">
-
+    <div id="nav-top" class="nav-container">
+        <ul class="nav wrapper">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#university_halls">University Halls</a></li>
+            <li><a href="#private_halls">Private Halls</a></li>
+            <li><a href="#private_housing">Private Housing</a></li>
+            <li><a href="#faq">FAQ Guide</a></li>
+        </ul>
+    </div>
+       
+        <!--
+        
+        SECTION 1
+        
+        -->
+        <div id="home" class="section">
             <div class="wrapper">
-
                 <h2>The University of Edinburgh</h2>
                 <h1>Accommodation</h1>
                 <div class="tiles">
-                    <div class="tile">
+                    <a href="#university_halls" class="tile">
                         <img class="tile_image" src="images/tile_university_halls.jpg" alt="University halls">
                         <div class="tile_title_container">
                             <p>University halls</p>
                         </div>
-                    </div>
-                    <div class="tile">
+                    </a>
+                    <a href="#private_halls" class="tile">
                         <img class="tile_image" src="images/tile_private_halls.jpg" alt="Private halls">
                         <div class="tile_title_container">
                             <p>Private student halls</p>
                         </div>
-                    </div>
-                    <div class="tile">
+                    </a>
+                    <a href="private_housing" class="tile">
                         <img class="tile_image" src="images/tile_private_housing.jpg" alt="Private housing">
                         <div class="tile_title_container">
                             <p>Private housing</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="secondary_tiles">
                     <div class="long_tile">
@@ -62,51 +57,96 @@
                             <p>A student's guide to finding accommodation</p>
                         </div>
                     </div>
-                    <div class="short_tile">
+                    <a href="#faq" class="short_tile">
                         <img class="tile_image" src="images/tile_FAQ.jpg" alt="FAQ">
                         <div class="tile_title_container">
                             <p>Read our FAQ</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
             </div>
-        </div>
       </div>
+      
+      <!--
+        
+        SECTION 2
+        
+       -->
+      <div id="university_halls" class="section">
+          <div class="wrapper">
+              <h2>University Halls</h2>
+          </div>
       </div>
-      </section>
+      
+      <!--
+        
+        SECTION 3
+        
+      -->
+      <div id="private_halls" class="section">
+          <div class="wrapper">
+              <h2>Private Halls</h2>
+          </div>
+      </div>
+      
+      <!--
+        
+        SECTION 4
+        
+      -->
+      <div id="private_housing" class="section">
+          <div class="wrapper">
+              <h2>Private Housing</h2>
+          </div>
+      </div>
+      
+      <!--
+        
+        SECTION 5
+        
+      -->
+      <div id="faq" class="section">
+          <div class="wrapper">
+              <h2>FAQ Guide</h2>
+          </div>
+      </div>
+      
+      <!--
+        
+        FOOTER
+        
+      -->
+      <div id="footer">
+          <p>Footer</p>
+          <p>Blabla</p>
+          <p>.</p>
+          <p>.</p>
+          <p>X where X != &copy; Sibylle</p>
+      </div>
+      
+      
+      <!--
+      
+        MISC
+      
+      -->
+      
+      <!-- JavaScript for smooth/transition scrolling -->
+        <script type="text/javascript"> 
+            $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
 
-    <section class="module parallax parallax-2" id="2">
-      <div class="container">
-    <h1>University Halls</h1>
-  </div>
-    </section>
-    <section class="module parallax parallax-3" id="3">
-    <div class="container">
-    <h1>Private Halls</h1>
-  </div>
-    </section>
-    <section class="module parallax parallax-4" id="4">
-    <div class="container">
-    <h1>Private Housing</h1>
-  </div>
-    </section>
-    <section class="module parallax parallax-5" id="5">
-    <div class="container">
-    <h1>FAQ</h1>
-  </div>
-    </section>
-
-    <div id="footer navigation ">
-      <ul class="nav navbar-nav ">
-        <li><a href="#1 ">Home</a></li>
-        <li><a href="#2 ">University Halls</a></li>
-        <li><a href="#3 ">Private Halls</a></li>
-        <li><a href="#4 ">Private Housing</a></li>
-        <li><a href="#5 ">FAQ</a></li>
-        </ul>
-         <p class="navbar-text navbar-left footer-p">Copyright &copy; Sibylle Katharina Sehl 2016. All rights reserved. Images licensed via Creative Commons</p>
-     </div>
-</div>
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+           }
+    }
+    });     
+        </script>
 </body>
 </html>
