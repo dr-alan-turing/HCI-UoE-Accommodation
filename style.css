@@ -301,3 +301,36 @@ Filler container
 */
 
 #university_halls {}
+
+.map_locations {
+    display: table;
+}
+
+.map {
+    display: inline-block;
+    height: 700px;
+    float: left;
+}
+
+.legend {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.legend_number {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #00de00;
+    color: white;
+    text-align: center;
+}
+
+.postgraduates .legend_number {
+    background-color: #ff00b1;
+}
