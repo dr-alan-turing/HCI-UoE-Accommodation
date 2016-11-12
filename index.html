@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>UoE Accommodation</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="script.js"></script>
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- jQuery easing -->
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <!-- jQuery elevate zoom -->
+    <script type="text/javascript" src="js/jquery.elevatezoom.js"></script>
 </head>
 
 <body>
@@ -127,7 +133,8 @@
                     </ul>
                 </ul>
                 <h4>Locations</h4>
-                <div class="map_locations"> <img class="map" src="images/undergrad-accomm-map.png" alt="Undergraduate accommodation map">
+                <p>Hover with mouse over map to zoom in.</p>
+                <div class="map_locations"> <img class="map elevate_zoom" src="images/undergrad-accomm-map.png" data-zoom-large="images/undergrad-accomm-map.png" alt="Undergraduate accommodation map">
                     <ul class="legend">
                         <li>
                             <div class="legend_number">1</div>Ascham Court</li>
@@ -186,7 +193,8 @@
                     <li>University accommodation rents include all utility bills; personal contents insurance; internet facilities and support from the Residence Life team. Cleaning and housekeeping varies according to the location and type of accommodation offered but usually includes all common areas, staircases etc. within our premises.</li>
                 </ul>
                 <h4>Locations</h4>
-                <div class="map_locations"> <img class="map" src="images/postgrad-accomm-map.png" alt="Postgraduate accommodation map">
+                <p>Hover with mouse over map to zoom in.</p>
+                <div class="map_locations"> <img class="map elevate_zoom" src="images/postgrad-accomm-map.png" alt="Postgraduate accommodation map">
                     <ul class="legend">
                         <li>
                             <div class="legend_number">1</div>Blackfriars Street</li>
@@ -266,18 +274,16 @@
         
       -->
     <div id="footer">
-        <p>Footer</p>
-        <p>Blabla</p>
-        <p>.</p>
-        <p>.</p>
-        <p>X where X != &copy; Sibylle</p>
+        <p>Human-Computer Interaction Design Project</p>
+        <p>&copy; Tom Neckermann, Sibylle Sehl, Ksenia Kus, Vanessa Chang</p>
+        <p>The University of Edinburgh</p>
     </div>
     <!--
       
-        MISC
+        JavaScript
       
       -->
-    <!-- JavaScript for smooth/transition scrolling -->
+    <!-- Smooth/transition scrolling -->
     <script type="text/javascript">
         $('a[href*=#]:not([href=#])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -290,6 +296,18 @@
                     return false;
                 }
             }
+        });
+    </script>
+    <!-- Image zoom -->
+    <script type="text/javascript">
+        $('.elevate_zoom').each(function (i, obj) {
+            console.log(obj)
+            $(obj).elevateZoom({
+                zoomType: "window",
+                cursor: "crosshair",
+                zoomWindowFadeIn: 500,
+                zoomWindowFadeOut: 750
+            });
         });
     </script>
 </body>
