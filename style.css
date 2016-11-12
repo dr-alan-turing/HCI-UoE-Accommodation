@@ -58,6 +58,7 @@ img {
     max-width: 100%;
 }
 
+
 /*
 Nav
 */
@@ -97,14 +98,14 @@ Nav
     color: white;
     text-decoration: none;
     font-family: 'Raleway', 'Helvetica', sans-serif;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 
 /*TO-DO:, .nav li a:focus*/
 
 .nav li a:hover {
-    background-color: #363636;
+    background-color: #151515;
 }
 
 
@@ -151,10 +152,9 @@ Sections
     filter: blur(10px);
 }
 
-#university_halls,
-#private_housing {
-    /*background-color: #ebebeb;*/
-    /* just playing around */
+#university_halls:after,
+#private_housing:after {
+    background-image: url('images/first_section_background2.jpg');
 }
 
 #footer {
@@ -189,6 +189,7 @@ Sections
     background-color: rgba(0, 0, 0, 0);
 }
 
+
 /*
 Titles
 */
@@ -204,10 +205,11 @@ Titles
 }
 
 #home .titles h2 {
-    margin-top: 50px;
+    margin-top: 5vh;
     font-size: 50px;
     font-weight: 500;
 }
+
 
 /*
 Primary tiles
@@ -291,9 +293,11 @@ Secondary tiles
     object-position: center;
 }
 
+
 /*
 Filler container
 */
+
 .filler_container {
     flex: 1 1 auto;
 }
@@ -344,6 +348,7 @@ Filler container
 .postgraduates .legend_number {
     background-color: #ff00b1;
 }
+
 
 /*
 *
