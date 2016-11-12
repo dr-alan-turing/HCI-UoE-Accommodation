@@ -13,18 +13,21 @@
 
 h2 {
 	font-size: 40px;
-	line-height: 70px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
 h3 {
 	font-size: 25px;
-	line-height: 50px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 h4 {
 	font-size: 21px;
-	line-height: 40px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 p,
@@ -370,4 +373,8 @@ Filler container
 
 #faq {
 	padding-bottom: 50px;
+}
+
+#faq .faq_questions>li {
+	font-weight: bold;
 }
