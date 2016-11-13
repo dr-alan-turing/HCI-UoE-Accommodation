@@ -145,7 +145,7 @@ Sections
 .section {
     position: relative;
     padding-top: 60px;
-    background-color: rgba(18, 18, 18, 0.58);
+    background-color: rgba(18, 18, 18, 0.18);
 }
 
 .section > .wrapper {
@@ -166,15 +166,15 @@ Sections
     background-color: #E8E8E8;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.9;
     z-index: -1;
     content: "";
     /*compatibility*/
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    -o-filter: blur(20px);
-    -ms-filter: blur(20px);
-    filter: blur(10px);
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
 }
 
 #university_halls:after,
@@ -476,6 +476,11 @@ Filler container
     padding-bottom: 50px;
 }
 
-#faq .faq_questions>li {
+.faq_questions {
+    list-style: none;
+    margin-left: 0;
+}
+
+.faq_questions>li {
     font-weight: bold;
 }
