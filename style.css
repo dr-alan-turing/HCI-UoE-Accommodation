@@ -63,8 +63,8 @@ ul > ul {
 }
 
 .list_with_image_bullets>li {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 3px;
     font-weight: 600;
 }
 
@@ -72,11 +72,25 @@ ul > ul {
     margin-left: 55px;
 }
 
+.list_with_image_bullets .cross {
+    height: 26px;
+}
+
 .list_image {
     float: left;
     height: 30px;
     margin-right: 8px;
     margin-bottom: 10px;
+}
+
+.float_left_50 {
+    float: left;
+    width: 50%;
+}
+
+.float_right_50 {
+    float: right;
+    width: 49%;
 }
 
 img {
@@ -281,11 +295,6 @@ General
 Titles
 */
 
-.uoe_logo {
-    margin-top: 20px;
-    max-width: 600px;
-}
-
 #home .titles {
     flex: 1 1 auto;
 }
@@ -404,27 +413,13 @@ Filler container
 
 /*
 *
-* Section 2 (university halls)
+* Section 2 (University Halls)
 *
 */
 
 #university_halls .wrapper {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.accommodation_guarantee {
-    float: left;
-    width: 50%;
-}
-
-.accommodation_guarantee ul .cross {
-    height: 27px;
-}
-
-.estimated_rent {
-    float: right;
-    width: 49%;
 }
 
 .map_locations {
@@ -440,6 +435,16 @@ Filler container
     background-color: #ff00b1;
 }
 
+
+/*
+*
+* Section 4 (Private Halls)
+*
+*/
+
+#private_halls ul>li {
+    font-weight: 300;
+}
 
 /*
 *
