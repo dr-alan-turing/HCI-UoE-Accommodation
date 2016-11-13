@@ -63,6 +63,8 @@ ul > ul {
 }
 
 .list_with_image_bullets>li {
+    margin-top: 15px;
+    margin-bottom: 5px;
     font-weight: 600;
 }
 
@@ -74,6 +76,7 @@ ul > ul {
     float: left;
     height: 30px;
     margin-right: 8px;
+    margin-bottom: 10px;
 }
 
 img {
@@ -226,10 +229,10 @@ Maps and legends
 }
 
 .legend {
-    margin-left: 0;
-    margin-right: 30px;
     display: inline-block;
     float: left;
+    margin-left: 3px;
+    margin-right: 30px;
     list-style-type: none;
 }
 
@@ -410,12 +413,12 @@ Filler container
     border-top-right-radius: 10px;
 }
 
-.room_guarantee {
+.accommodation_guarantee {
     float: left;
     width: 50%;
 }
 
-.room_guarantee ul .cross {
+.accommodation_guarantee ul .cross {
     height: 27px;
 }
 
