@@ -49,11 +49,11 @@ li {
     line-height: 30px;
 }
 
-ul {
+ul, ol {
     margin-left: 20px;
 }
 
-ul > ul {
+ul > ul, ol > ol {
     margin-left: 40px;
 }
 
@@ -68,7 +68,7 @@ ul > ul {
     font-weight: 600;
 }
 
-.list_with_image_bullets>ul {
+.list_with_image_bullets>ul, .list_with_image_bullets>ol {
     margin-left: 55px;
 }
 
@@ -101,6 +101,9 @@ img {
     clear: both;
 }
 
+.not_bold, .not_bold>* {
+    font-weight: 300 !important;
+}
 
 /*
 Nav
@@ -114,7 +117,7 @@ Nav
 }
 
 .nav-container {
-    background-color: rgba(29, 29, 29, 0.80);
+    background-color: rgba(29, 29, 29, 0.85);
 }
 
 .nav-container > .wrapper {
@@ -451,6 +454,10 @@ Filler container
 * Section 4 (Private Housing)
 *
 */
+
+.private_housing_map_and_legend {
+    margin-top: 15px;
+}
 
 .private_housing_map {
     display: inline-block;
