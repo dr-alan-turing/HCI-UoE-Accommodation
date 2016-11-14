@@ -61,6 +61,7 @@ p,
 li {
     font-size: 18px;
     line-height: 30px;
+    max-height: 999999px;
 }
 
 ul, ol {
