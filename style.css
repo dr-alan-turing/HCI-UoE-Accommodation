@@ -25,6 +25,10 @@ body {
     padding: 30px;
 }
 
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
 h2 {
     font-size: 40px;
     margin-top: 15px;
