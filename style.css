@@ -8,7 +8,8 @@
     margin: 0;
     padding: 0;
     /*temp?:*/
-    font-family: 'Raleway', 'Helvetica', sans-serif;
+    font-family: 'Calibri', 'Raleway', 'Helvetica', sans-serif;
+    font-weight: 300;
 }
 
 html,
@@ -29,27 +30,32 @@ h2 {
     margin-top: 15px;
     margin-bottom: 10px;
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 25px;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .h2_h3 {
     font-size: 32px;
+    font-weight: 600;
 }
 
 h4 {
     font-size: 21px;
     margin-top: 15px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 p,
 li {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 30px;
 }
 
@@ -58,7 +64,7 @@ ul, ol {
 }
 
 ul > ul, ol > ol {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .list_with_image_bullets {
