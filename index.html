@@ -69,11 +69,10 @@
                         </div>
                     </a>
                 </div>
-                <a href="#faq" class="short_tile">
-                    <img class="tile_image" src="images/tile_faq.png" alt="FAQ">
-                        <div class="tile_title_container">
-                            <p>Read our FAQ</p>
-                        </div>
+                <a href="#faq" class="short_tile"> <img class="tile_image" src="images/tile_faq.png" alt="FAQ">
+                    <div class="tile_title_container">
+                        <p>Read our FAQ</p>
+                    </div>
                 </a>
             </div>
             <div class="filler_container"></div>
@@ -87,14 +86,17 @@
     <div id="university_halls" class="section">
         <div class="wrapper">
             <h2>University Halls</h2>
+            <div class="quick_nav"> <img src="images/quick_nav.png" alt="icon">
+                <p>Quick navigation: <a href="#undergraduate_locations">Undergrad locations</a> | <a href="#postgraduate_students">Postgraduate students</a> | <a href="#postgraduate_locations">Postgrad locations</a></p>
+            </div>
             <!--
             Undergraduates
             -->
             <div class="undergraduates">
-                <h3>Undergraduate students</h3>
+                <h3 class="h2_h3">Undergraduate students</h3>
                 <p>University of Edinburgh offers a variety of options for undergraduate students. <a href="http://www.accom.ed.ac.uk/media/7104/ug-student-guide-2017-final.pdf">Read full undergraduate guide here.</a></p>
                 <div class="accommodation_guarantee float_left_50">
-                    <h4>Accommodation guarantee</h4>
+                    <h3>Accommodation guarantee</h3>
                     <ul class="list_with_image_bullets">
                         <li><img class="list_image tick" src="images/green_tick.png" alt="Guaranteed">Freshers with UoE as first choice</li>
                         <ul>
@@ -117,12 +119,12 @@
                         <li> <img class="list_image cross" src="images/red_cross.png" alt="Not guaranteed">Couples and families</li>
                         <ul>
                             <li>Limited supply of suitable accommodation</li>
-                            <li>First-come first-served basis</li>
+                            <li id="undergraduate_locations">First-come first-served basis</li>
                         </ul>
                     </ul>
                 </div>
                 <div class="estimated_rent  float_right_50">
-                    <h4>Estimated rent</h4>
+                    <h3>Estimated rent</h3>
                     <ul class="list_with_image_bullets">
                         <li><img class="list_image" src="images/catered.png" alt="icon">Catered</li>
                         <ul>
@@ -145,7 +147,7 @@
                     </ul>
                 </div>
                 <div class="clear"></div>
-                <h4>Locations</h4>
+                <h3>Locations</h3>
                 <p>The University of Edinburgh currently manages 20 student accommodation halls for undergraduates.</p>
                 <div class="map_locations">
                     <ul class="legend">
@@ -188,7 +190,7 @@
                         <li>
                             <div class="legend_number">19</div>Warrender Park Crescent</li>
                         <li>
-                            <div class="legend_number">20</div>Warrender Park Road</li>
+                            <div class="legend_number" id="postgraduate_students">20</div>Warrender Park Road</li>
                     </ul>
                     <div class="map"> <img class="elevate_zoom" src="images/undergrad-accomm-map.png" data-zoom-large="images/undergrad-accomm-map.png" alt="Undergraduate accommodation map"> </div>
                     <div class="map_zoom_square">
@@ -200,10 +202,10 @@
             Postgraduates
             -->
             <div class="postgraduates">
-                <h3>Postgraduate students</h3>
+                <h3 class="h2_h3">Postgraduate students</h3>
                 <p>University of Edinburgh offers a variety of options for postgraduate students. <a href="">Read full postgraduate guide here.</a></p>
                 <div class="accommodation_guarantee float_left_50">
-                    <h4>Accommodation guarantee</h4>
+                    <h3>Accommodation guarantee</h3>
                     <ul class="list_with_image_bullets">
                         <li><img class="list_image tick" src="images/green_tick.png" alt="Guaranteed">All new postgraduate research students</li>
                         <ul>
@@ -226,7 +228,7 @@
                     </ul>
                 </div>
                 <div class="estimated_rent float_right_50">
-                    <h4>Estimated rent</h4>
+                    <h3>Estimated rent</h3>
                     <ul class="list_with_image_bullets">
                         <li><img class="list_image" src="images/price.png" alt="icon">£83 to £166 per week (51 week lease)</li>
                         <ul>
@@ -243,12 +245,12 @@
                         <li><img class="list_image" src="images/info.png" alt="Info">Applications and offers</li>
                         <ul>
                             <li>Applications expected to open from early February</li>
-                            <li>Offers normally be made from May</li>
+                            <li id="postgraduate_locations">Offers normally made from May</li>
                         </ul>
                     </ul>
                 </div>
                 <div class="clear"></div>
-                <h4>Locations</h4>
+                <h3>Locations</h3>
                 <p>The University of Edinburgh currently manages 11 student accommodation halls for postgraduates.</p>
                 <div class="map_locations">
                     <ul class="legend">
@@ -325,6 +327,8 @@
             <div class="clear"></div>
             <h3>Stay safe!</h3>
             <p><strong>IMPORTANT:</strong> <a href="#university_halls_stay_safe">Read this section</a> about avoiding scams and other unexpected surprises.</p>
+            <h3>FAQ</h3>
+            <p>Read our <a href="#faq_private_halls">Frequently Asked Questions for Private Halls</a>.</p>
         </div>
     </div>
     <!--
@@ -335,6 +339,9 @@
     <div id="private_housing" class="section">
         <div class="wrapper">
             <h2>Private Housing</h2>
+            <div class="quick_nav"> <img src="images/quick_nav.png" alt="icon">
+                <p>Quick navigation: <a href="#private_housing_locations">Locations</a> | <a href="#finding_a_place">Finding a place, Staying Safe, Your rights as a tenant</a></p>
+            </div>
             <div class="float_left_50">
                 <h3>Advantages</h3>
                 <ul class="list_with_image_bullets not_bold">
@@ -366,7 +373,7 @@
                     <li>Arrange viewings with landlords and/or agencies</li>
                     <li>After viewings, select fovourites and apply</li>
                     <li>If accepted, you will usually be asked to pay a deposit</li>
-                    <li>Read contract carefully and sign it to complete application</li>
+                    <li id="private_housing_locations">Read contract carefully and sign it to complete application</li>
                 </ol>
             </div>
             <div class="float_left_50">
@@ -397,10 +404,10 @@
                         <li style="color:#4186F0">New Town</li>
                         <li style="color:#F4B400">Gorgie &#38; Dalry</li>
                         <li style="color:#91baff">Morningside</li>
-                        <li style="color:#d9d900" id="finding_a_place">Southside</li>
+                        <li style="color:#d9d900">Southside</li>
                         <li>Little France</li>
-                        <li>Newington</li>
-                        <li>Kings Building Campus</li>
+                        <li id="university_halls_stay_safe">Newington</li>
+                        <li id="finding_a_place">Kings Building Campus</li>
                     </ul>
                 </div>
             </div>
@@ -420,7 +427,7 @@
                 <p>You can also find a place by paying attention to "For Rent" signs on buildings. Facebook pages such as <a href="https://www.facebook.com/groups/edinroom/" target="_blank">EdinRoom</a> can also prove useful in your search.</p>
             </div>
             <div class="float_right_50">
-                <h3 id="university_halls_stay_safe">Staying safe</h3>
+                <h3>Staying safe</h3>
                 <ul class="list_with_image_bullets not_bold">
                     <li><img class="list_image" src="images/green_tick.png" alt="icon">Private halls: Look up authenticiy of letting company <a href="http://www.arla.co.uk/" target="_blank">here</a>, <a href="http://www.nalscheme.co.uk/" target="_blank">here</a>, or <a href="https://www.tpos.co.uk/find-a-member" target="_blank">here</a></li>
                     <li><img class="list_image" src="images/green_tick.png" alt="icon">Private housing: Verify authenticity of landlord/agent <a href="https://www.landlordregistrationscotland.gov.uk/Pages/Process.aspx?Command=ShowHomePage" target="_blank">here</a> and <strong>always</strong> view a place before wiring a deposit</li>
@@ -434,6 +441,8 @@
                 </ul>
             </div>
             <div class="clear"></div>
+            <h3>FAQ</h3>
+            <p>Read our <a href="#faq_private_housing">Frequently Asked Questions for Private Housing</a>.</p>
         </div>
     </div>
     <!--
@@ -444,6 +453,9 @@
     <div id="faq" class="section">
         <div class="wrapper">
             <h2>FAQ Guide</h2>
+            <div class="quick_nav"> <img src="images/quick_nav.png" alt="icon">
+                <p>Quick navigation: <a href="#faq_private_halls">Private student halls FAQ</a> | <a href="#faq_private_housing">Private housing FAQ</a></p>
+            </div>
             <h3>University student halls</h3>
             <ul class="faq_questions">
                 <li>How do I apply for accommodation?</li>
@@ -484,7 +496,7 @@
                 <li>I live in Edinburgh, can I still apply to move into Halls?</li>
                 <ul>
                     <li>University accommodation is not guaranteed if you already live in Edinburgh or close to it.</li>
-                    <li>You can still apply though and might be offered University accommodation if there are spaces.</li>
+                    <li id="faq_private_halls">You can still apply though and might be offered University accommodation if there are spaces.</li>
                 </ul>
             </ul>
             <h3>Private student halls</h3>
@@ -515,7 +527,7 @@
                 </ul>
                 <li>Does the rent include service bills?</li>
                 <ul>
-                    <li>Yes, most properties include all service bills. Please check the different policies for further information.</li>
+                    <li id="faq_private_housing">Yes, most properties include all service bills. Please check the different policies for further information.</li>
                 </ul>
             </ul>
             <p>Credit: <a href="https://www.livety.com/faq" target="_blank">Livety FAQ</a></p>
