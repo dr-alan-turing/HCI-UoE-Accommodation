@@ -376,28 +376,36 @@ Secondary tiles
 
 .secondary_tiles {
     flex: 1 1 auto;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-}
-
-.long_tile {
-    width: 66%;
-}
-
-.short_tile {
-    width: 32%;
 }
 
 .long_tile,
 .short_tile {
-    display: inline-block;
+    display: block;
     position: relative;
-    height: 130px;
+}
+
+.long_tiles_container {
+    width: 66%;
+}
+
+.long_tile {
+    height: 120px;
+}
+
+.long_tile:first-of-type {
+    margin-bottom: 30px
 }
 
 .long_tile .tile_image {
     object-position: top;
+}
+
+.short_tile {
+    height: 270px;
+    width: 32%;
 }
 
 .short_tile .tile_image {
