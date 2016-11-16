@@ -64,6 +64,10 @@ li {
     max-height: 999999px;
 }
 
+p {
+    margin-top: 10px;
+}
+
 ul, ol {
     margin-left: 20px;
 }
@@ -80,6 +84,10 @@ ul > ul, ol > ol {
 .list_with_image_bullets>li {
     margin-top: 8px;
     margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.list_with_image_bullets>li>a {
     font-weight: 600;
 }
 
@@ -117,11 +125,11 @@ img {
     clear: both;
 }
 
-.not_bold, .not_bold>* {
+.not_bold, .not_bold * {
     font-weight: 300 !important;
 }
 
-strong {
+strong, .strong {
     font-weight: bold !important;
 }
 
@@ -477,7 +485,7 @@ Filler container
 }
 
 .postgraduates {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .postgraduates .legend_number {
@@ -530,7 +538,7 @@ Filler container
 *
 */
 
-#faq {
+#links_and_faq {
     padding-bottom: 50px;
 }
 
