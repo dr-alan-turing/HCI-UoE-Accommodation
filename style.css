@@ -121,6 +121,10 @@ img {
     font-weight: 300 !important;
 }
 
+strong {
+    font-weight: bold !important;
+}
+
 /*
 Nav
 */
