@@ -280,6 +280,10 @@ Sections
     text-align: center;
 }
 
+#footer p {
+    margin: 0;
+}
+
 
 /*
 Maps and legends
@@ -373,7 +377,6 @@ Titles
 
 #home_container .titles {
     flex: 1 1 auto;
-    padding-top: 30px;
 }
 
 #home_container .titles h1 {
@@ -383,7 +386,7 @@ Titles
 
 #home_container .titles h2,
 #home_container .titles h2 span {
-    margin-top: 2vh;
+    margin-top: 5.5vh;
     font-size: 31px;
     font-weight: 100;
     font-family: 'Times New Roman';
@@ -409,7 +412,7 @@ Primary tiles
     display: inline-block;
     position: relative;
     width: 32%;
-    height: 300px;
+    height: 30vh;
 }
 
 .tile_image {
@@ -449,7 +452,7 @@ Secondary tiles
 
 .secondary_tiles {
     flex: 1 1 auto;
-    margin-top: 20px;
+    margin-top: 2vh;
     display: flex;
     justify-content: space-between;
 }
@@ -465,11 +468,11 @@ Secondary tiles
 }
 
 .long_tile {
-    height: 120px;
+    height: 12.5vh;
 }
 
 .long_tile:first-of-type {
-    margin-bottom: 30px
+    margin-bottom: 3.5vh;
 }
 
 .long_tile .tile_image {
@@ -477,23 +480,13 @@ Secondary tiles
 }
 
 .short_tile {
-    height: 270px;
+    height: 28.5vh;
     width: 32%;
 }
 
 .short_tile .tile_image {
     object-position: center;
 }
-
-
-/*
-Filler container
-*/
-
-.filler_container {
-    flex: 1 1 auto;
-}
-
 
 /*
 *
@@ -561,7 +554,7 @@ Filler container
 */
 
 #links_and_faq_container {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 .faq_questions {
@@ -571,4 +564,16 @@ Filler container
 
 .faq_questions>li {
     font-weight: bold;
+}
+
+/*
+Back to top
+*/
+.back_to_top {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back_to_top, .back_to_top a {
+    color: white;
 }
