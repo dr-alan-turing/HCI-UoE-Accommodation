@@ -8,7 +8,8 @@
     margin: 0;
     padding: 0;
     /*temp?:*/
-    font-family: Calibri, sans-serif; /*'Raleway', 'Helvetica', sans-serif;*/
+    font-family: Calibri, sans-serif;
+    /*'Raleway', 'Helvetica', sans-serif;*/
     font-weight: 300;
 }
 
@@ -68,11 +69,13 @@ p {
     margin-top: 10px;
 }
 
-ul, ol {
+ul,
+ol {
     margin-left: 20px;
 }
 
-ul > ul, ol > ol {
+ul > ul,
+ol > ol {
     margin-left: 20px;
 }
 
@@ -91,7 +94,8 @@ ul > ul, ol > ol {
     font-weight: 600;
 }
 
-.list_with_image_bullets>ul, .list_with_image_bullets>ol {
+.list_with_image_bullets>ul,
+.list_with_image_bullets>ol {
     margin-top: -5px;
     margin-left: 55px;
 }
@@ -125,19 +129,34 @@ img {
     clear: both;
 }
 
-.not_bold, .not_bold * {
+.not_bold,
+.not_bold * {
     font-weight: 300 !important;
 }
 
-strong, .strong {
+strong,
+.strong {
     font-weight: bold !important;
 }
+
+
+/*
+Anchor: To offset scrolling to sections (because of fixed nav bar)
+*/
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -30px;
+    visibility: hidden;
+}
+
 
 /*
 Nav
 */
 
-#nav-top {
+#nav_top {
     position: fixed;
     top: 0;
     width: 100%;
@@ -145,7 +164,7 @@ Nav
 }
 
 .nav-container {
-    background-color: rgba(29, 29, 29, 0.85);
+    background-color: rgba(29, 29, 29, 0.88);
 }
 
 .nav-container > .wrapper {
@@ -175,32 +194,38 @@ Nav
     font-size: 19px;
 }
 
-
-/*TO-DO:, .nav li a:focus*/
-
 .nav li a:hover {
     background-color: #151515;
 }
+
+.nav .active {
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
 
 /*
 Quick nav and info
 */
 
-.quick_nav, .quick_info {
+.quick_nav,
+.quick_info {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-.quick_nav img, .quick_info img {
+.quick_nav img,
+.quick_info img {
     float: left;
     height: 30px;
     margin-right: 8px;
     margin-bottom: 3px;
 }
 
-.quick_nav p, .quick_info p {
+.quick_nav p,
+.quick_info p {
     font-size: 18px;
 }
+
 
 /*
 Sections
@@ -208,7 +233,8 @@ Sections
 
 .section {
     position: relative;
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     background-color: rgba(18, 18, 18, 0.18);
 }
 
@@ -324,7 +350,7 @@ Maps and legends
 General
 */
 
-#home {
+#home_container {
     position: relative;
     /*background-color: #1d1d1d;*/
     background-color: rgba(18, 18, 18, 0.58);
@@ -332,7 +358,7 @@ General
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#home > .wrapper {
+#home_container > .wrapper {
     background-color: rgba(0, 0, 0, 0);
     min-height: 95vh;
     display: flex;
@@ -345,24 +371,25 @@ General
 Titles
 */
 
-#home .titles {
+#home_container .titles {
     flex: 1 1 auto;
+    padding-top: 30px;
 }
 
-#home .titles h1 {
-    margin-bottom: 20px;
+#home_container .titles h1 {
     font-size: 63px;
     font-weight: 600;
 }
 
-#home .titles h2, #home .titles h2 span {
+#home_container .titles h2,
+#home_container .titles h2 span {
     margin-top: 2vh;
     font-size: 31px;
     font-weight: 100;
     font-family: 'Times New Roman';
 }
 
-#home .of {
+#home_container .of {
     font-style: italic;
     margin-right: 5px;
 }
@@ -474,11 +501,6 @@ Filler container
 *
 */
 
-#university_halls .wrapper {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
 .map_locations {
     display: table;
     margin-top: 15px;
@@ -499,9 +521,9 @@ Filler container
 *
 */
 
-#private_halls ul>li {
-    font-weight: 300;
-}
+
+/* Nothing here (yet) */
+
 
 /*
 *
@@ -538,8 +560,8 @@ Filler container
 *
 */
 
-#links_and_faq {
-    padding-bottom: 50px;
+#links_and_faq_container {
+    padding-bottom: 70px;
 }
 
 .faq_questions {
